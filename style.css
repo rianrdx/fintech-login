@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /* colors */
+  --bg-color: #121214;
+  --bg-color-input: #202024;
+  --primary-color: #059669;
+  --text-color: #7c7c8a;
+  --text-color-check: #c4c4cc;
+  --text-color-label: #e1e1e6;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+#app {
+  background-color: var(--bg-color);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 3.8rem 2.4rem;
+  gap: 3.8rem;
+  align-items: center;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+label {
+  color: var(--text-color-label);
+}
+
+#exampleInputEmail1,
+#exampleInputPassword1 {
+  background-color: var(--bg-color-input);
+  border: 0;
+  color: var(--text-color-label);
+  font-size: 1.6rem;
+}
+
+#exampleInputEmail1::placeholder,
+#exampleInputPassword1::placeholder {
+  color: var(--text-color);
+  font-size: 1.4rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #04a572b9;
+}
+
+form {
+  width: 100%;
+  max-width: 42.5rem;
+}
+
+.form-check-label {
+  font-size: 1.4rem;
+  color: var(--text-color-check);
+}
+
+#exampleCheck1 {
+  background-color: var(--bg-color-input);
+  border: 1px solid var(--primary-color);
+}
+
+footer a {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
+footer a:hover {
+  color: var(--text-color-check);
+}
